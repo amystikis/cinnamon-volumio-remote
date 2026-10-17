@@ -1,0 +1,112 @@
+{
+  "head-conn": {
+    "type": "section",
+    "description": "Connection"
+  },
+  "host": {
+    "type": "entry",
+    "default": "volumio.local",
+    "description": "Volumio host / IP"
+  },
+  "interval": {
+    "type": "spinbutton",
+    "default": 2,
+    "min": 1,
+    "max": 30,
+    "step": 1,
+    "units": "seconds",
+    "description": "Refresh interval"
+  },
+  "head-shape": {
+    "type": "section",
+    "description": "Shape"
+  },
+  "layout": {
+    "type": "combobox",
+    "default": "horizontal",
+    "description": "Layout",
+    "options": {
+      "Art on the left": "horizontal",
+      "Art on top": "vertical"
+    }
+  },
+  "width": {
+    "type": "spinbutton",
+    "default": 360,
+    "min": 160,
+    "max": 900,
+    "step": 10,
+    "units": "px",
+    "description": "Width"
+  },
+  "height": {
+    "type": "spinbutton",
+    "default": 130,
+    "min": 80,
+    "max": 500,
+    "step": 10,
+    "units": "px",
+    "description": "Height (art-on-left layout only)"
+  },
+  "corner-radius": {
+    "type": "spinbutton",
+    "default": 16,
+    "min": 0,
+    "max": 100,
+    "step": 2,
+    "units": "px",
+    "description": "Card corner radius (0 = square)"
+  },
+  "art-shape": {
+    "type": "combobox",
+    "default": "rounded",
+    "description": "Art shape",
+    "options": {
+      "Square": "square",
+      "Rounded": "rounded",
+      "Circle": "circle"
+    }
+  },
+  "show-art": {
+    "type": "switch",
+    "default": true,
+    "description": "Show art"
+  },
+  "head-art": {
+    "type": "section",
+    "description": "Artwork"
+  },
+  "art-source": {
+    "type": "combobox",
+    "default": "mb-itunes",
+    "description": "Artwork lookup (when Volumio has no cover)",
+    "options": {
+      "MusicBrainz / Cover Art Archive first, iTunes as backup": "mb-itunes",
+      "MusicBrainz / Cover Art Archive only (open source)": "mb",
+      "iTunes only": "itunes",
+      "Don't look up artwork": "off"
+    }
+  },
+  "head-look": {
+    "type": "section",
+    "description": "Colours"
+  },
+  "bg-color": {
+    "type": "colorchooser",
+    "default": "rgb(30,30,30)",
+    "description": "Background colour"
+  },
+  "bg-opacity": {
+    "type": "scale",
+    "default": 80,
+    "min": 0,
+    "max": 100,
+    "step": 5,
+    "description": "Background opacity (%)"
+  },
+  "text-color": {
+    "type": "colorchooser",
+    "default": "rgb(255,255,255)",
+    "description": "Text colour"
+  }
+}

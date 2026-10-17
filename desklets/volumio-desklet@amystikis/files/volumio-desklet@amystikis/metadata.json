@@ -1,0 +1,9 @@
+{
+  "uuid": "volumio-desklet@amystikis",
+  "name": "Volumio Remote",
+  "description": "Now playing art, title, artist and volume for a remote Volumio",
+  "version": "2.0",
+  "max-instances": 3,
+  "author": "amystikis",
+  "prevent-decorations": true
+}
